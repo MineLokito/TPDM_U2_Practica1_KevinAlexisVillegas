@@ -157,7 +157,7 @@ class Main2Activity : AppCompatActivity() {
         var elemento = EditText(this)
         elemento.inputType = InputType.TYPE_CLASS_NUMBER
 
-        AlertDialog.Builder(this).setTitle("Atención!").setMessage("Escruiba el ID en ${etiqueta}: ").setView(elemento)
+        AlertDialog.Builder(this).setTitle("Atención!").setMessage("Escriba el ID en ${etiqueta}: ").setView(elemento)
             .setPositiveButton("OK"){dialog,which ->
                 if(validarCampo(elemento) == false){
                     Toast.makeText(this@Main2Activity, "Error! campo vacío", Toast.LENGTH_LONG).show()
